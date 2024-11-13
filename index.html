@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Akinrolabu Lolade">
+    <meta name="description" content="A brief summary of sahara desert, web developer">
+    <title>WDD 231 | Homepage</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto:wght@400;500&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/index.css" >
+    <script src="scripts/index.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+    
+</head>
+<body class="main-body">
+
+    <header>
+        <div class="profile-header">
+            <img src="images/lolade_profile.png" alt="lolade_profile" >
+            <p> Akinrolabu Lolade</p>
+            <a id="menu" href="#"></a>
+        </div>
+        <nav >
+          <ul class="navigation">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="destination.html"> Chamber</a></li>
+            <li><a href="https://github.com/Lodakins/" target="_blank">Github Profile</a></li>
+            <li><a href="https://www.linkedin.com/in/lodakins" target="_blank">LinkedIn</a></li>
+          </ul>
+        </nav>
+      </header>
+   
+      <main class="main-section">
+        <section class="card card-1">
+            <h2> Course Work</h2>
+            <div class="">
+               <ul>
+                  <li>WDD 231 - Web Frontend Development 1</li>
+               </ul>
+            </div>
+        </section>
+
+        <section class="card card-2">
+          <h2> Lagos, Nigeria</h2>
+          <div>
+              <img src="images/lagos.jpg" alt="lagos_image" >
+          </div>
+        </section>
+
+        <section class="card card-3">
+          <h2> Web and Computer Programming Certificate</h2>
+          <div class="credit-score">
+              <p> Credits: <span id="credit">0</span></p>
+          </div>
+          <div class="course-cards-cont">
+             <div class="course-card" data-attr="ALL">
+                All
+             </div>
+             <div class="course-card" data-attr="CSE">
+                 CSE
+             </div>
+             <div class="course-card" data-attr="WDD">
+                WDD
+            </div>
+          </div>
+
+          <div class="course-details-cont">
+              <div class="course-detail active">
+                CSE 110
+              </div>
+              <div class="course-detail">
+                CSE 110
+              </div>
+          </div>
+        </section>
+      </main>
+
+  <footer>
+    <p> &copy; <span id="currentyear"></span> | Akinrolabu Lolade | Lagos, Nigeria</p>
+    <p> Last Modified: <span id="lastmodified"></span> </p>
+  </footer>
+</body>
+</html>
