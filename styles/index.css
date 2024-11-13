@@ -36,7 +36,7 @@ header .profile-header{
     width: 120px;
     height: 120px;
 }
-.profile-header p{
+.profile-header h1{
     font-size: 35px;
     font-family: var(--heading-font);
     margin-left: 30px;
