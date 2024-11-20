@@ -1,0 +1,105 @@
+main h1{
+    font-family: var(--heading-font);
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 20px 40px;
+}
+
+.bus-dir-cont{
+    background: #fff;
+    padding: 20px 40px;
+}
+.toggle-cont {
+    display: flex;
+    justify-content: flex-end;
+	margin: 1rem auto;
+	/* border: 1px solid rgba(0, 0, 0, 0.1); */
+	padding: 0.5rem;
+	/* background-color: #bed; */
+	text-align: center;
+}
+
+.toggle-cont button {
+	padding: 1rem;
+	font-weight: 700;
+    margin-right: 20px;
+}
+
+section {
+	/* border: 1px solid rgba(0, 0, 0, 0.1); */
+	padding: 0.5rem;
+	background-color: #eee;
+}
+
+.business-cont{
+    display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	grid-gap: 15px;
+	align-items: center;
+}
+.business-cont section {
+	text-align: center;
+}
+
+.business-cont img {
+	border: 1px solid #fff;
+	box-shadow: 0 0 10px #333;
+}
+
+.business-cont section > * {
+	margin: 0.1rem;
+}
+
+.business-cont h3 {
+	font-family: var(--heading-font);
+}
+
+.list {
+	display: flex;
+	flex-direction: column;
+}
+
+.list section {
+	display: grid;
+	grid-template-columns: 2fr 1fr 1fr;
+	margin: 0;
+	padding: 0.25rem;
+}
+
+.list section > * {
+	margin: 0 1rem;
+}
+
+.list section img {
+	display: none; /* smaller viewports only */
+}
+
+.list section h3 {
+	font-size: 1rem;
+	font-family: Roboto, Helvetica, sans-serif;
+}
+
+.list section:nth-child(even) {
+	background-color: #bed;
+}
+
+section h3 {
+	font-size: 1.5rem;
+}
+
+section p {
+	font-weight: 600;
+	font-size: smaller;
+}
+
+section a {
+	font-family: "Roboto", Arial, sans-serif;
+	font-size: 0.85rem;
+	color: navy;
+	letter-spacing: 1.1pt;
+}
+
+img {
+	height: 75px;
+	max-width: 100%; /* Images are jerks - Seattle*/
+}

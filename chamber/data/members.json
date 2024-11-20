@@ -1,0 +1,52 @@
+{
+    "business":[
+    {
+        "name":"Coca Cola Ltd",
+        "address":"16 Gerrard Road, Ikoyi, Lagos",
+        "phone":"+234 8097654322",
+        "websiteUrl":"https://www.coca-cola.com/ng/en",
+        "icon":"https://assets.ldscdn.org/c8/b5/c8b5e860a7edbbef90734c83be366e8d359d2c0b/payson_utah_temple.jpg",
+        "membershipLevel":"Premium"
+    },
+    {
+        "name":"Pepsi Limited",
+        "address":"247 Moshood Abiola Way, Ijora, Lagos, Nigeria",
+        "phone":"+234 8097654329",
+        "websiteUrl":"https://www.coca-cola.com/ng/en",
+        "icon":"https://assets.ldscdn.org/c8/b5/c8b5e860a7edbbef90734c83be366e8d359d2c0b/payson_utah_temple.jpg",
+        "membershipLevel":"Premium"
+    },
+    {
+        "name":"Flour Mills Limited",
+        "address":"47 Moshood Abiola Way, Ijora, Lagos, Nigeria",
+        "phone":"+234 8097654311",
+        "websiteUrl":"https://www.coca-cola.com/ng/en",
+        "icon":"https://assets.ldscdn.org/c8/b5/c8b5e860a7edbbef90734c83be366e8d359d2c0b/payson_utah_temple.jpg",
+        "membershipLevel":"Basic"
+    },
+    {
+        "name":"Globacom Nigeria Ltd",
+        "address":"267 Moshood Abiola Way, Ijora, Lagos, Nigeria",
+        "phone":"+234 7087654329",
+        "websiteUrl":"https://www.coca-cola.com/ng/en",
+        "icon":"https://assets.ldscdn.org/c8/b5/c8b5e860a7edbbef90734c83be366e8d359d2c0b/payson_utah_temple.jpg",
+        "membershipLevel":"Basic"
+    },
+    {
+        "name":"Enzo Machinery Limited",
+        "address":"17 Gerrard Road, Ikoyi, Lagos",
+        "phone":"+234 8097222329",
+        "websiteUrl":"https://www.coca-cola.com/ng/en",
+        "icon":"https://assets.ldscdn.org/c8/b5/c8b5e860a7edbbef90734c83be366e8d359d2c0b/payson_utah_temple.jpg",
+        "membershipLevel":"Premium"
+    },
+    {
+        "name":"Hannaso Beverages Ltd",
+        "address":"300 Moshood Abiola Way, Ijora, Lagos, Nigeria",
+        "phone":"+234 8097114329",
+        "websiteUrl":"https://www.coca-cola.com/ng/en",
+        "icon":"https://assets.ldscdn.org/c8/b5/c8b5e860a7edbbef90734c83be366e8d359d2c0b/payson_utah_temple.jpg",
+        "membershipLevel":"Premium"
+    }
+]
+}

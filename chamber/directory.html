@@ -1,30 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Akinrolabu Lolade">
     <meta name="description" content="A brief summary of sahara desert, web developer">
     <title> WDD 231 - Chamber Project </title>
-     <!--  Essential META Tags -->
-     <meta property="og:title" content="WDD 231 - Chamber Project">
-     <meta property="og:type" content="website" />
-     <meta property="og:image" content="https://lodakins.github.io/wdd231/images/lagos.jpg">
-     <meta property="og:url" content="https://lodakins.github.io/wdd231/chamber/directory.html">
-     <meta name="twitter:card" content="WDD 231 - Chamber Project">
- 
-     <!--  Non-Essential, But Recommended -->
-     <meta property="og:description" content="chamber project for WDD 231">
-     <meta property="og:site_name" content="WDD 231 - Chamber Project">
-     <meta name="twitter:image:alt" content="chamber project for WDD 231">
- 
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto:wght@400;500&display=swap"
-     rel="stylesheet">
-     <link rel="stylesheet" href="styles/normalize.css">
+    <!--  Essential META Tags -->
+    <meta property="og:title" content="WDD 231 - Chamber Project">
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://lodakins.github.io/wdd231/images/lagos.jpg">
+    <meta property="og:url" content="https://lodakins.github.io/wdd231/chamber/directory.html">
+    <meta name="twitter:card" content="WDD 231 - Chamber Project">
+
+    <!--  Non-Essential, But Recommended -->
+    <meta property="og:description" content="chamber project for WDD 231">
+    <meta property="og:site_name" content="WDD 231 - Chamber Project">
+    <meta name="twitter:image:alt" content="chamber project for WDD 231">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="images/chamber_logo.ico">
+    <link href="styles/fontawesome/css/fontawesome.min.css" rel="stylesheet">
+    <link href="styles/fontawesome/css/brands.min.css" rel="stylesheet">
+    <link href="styles/fontawesome/css/solid.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/directory.css">
+    <script src="scripts/directory.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+
+
 </head>
+
 <body>
-    
+
+    <header>
+        <div class="logo-cont">
+            <img src="images/chamber_logo.png" alt="logo" class="chamber_logo" loading="lazy">
+            <div id="toggle-btn">
+                <img src="images/hamburger.svg" alt="harmburger" id="icon" loading="lazy">
+            </div>
+        </div>
+        <nav class="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html" class="active"> Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+        <h1> Business Directory</h1>
+        <section class="bus-dir-cont">
+            <div class="toggle-cont">
+                <button id="grid">⏹️Grid</button>
+		        <button id="list">📄List</button>
+            </div>
+            <div class="business-cont" id="gridContainer">
+                <section>
+                    <img src="https://assets.ldscdn.org/c8/b5/c8b5e860a7edbbef90734c83be366e8d359d2c0b/payson_utah_temple.jpg" alt="Payson Utah Temple" />
+                    <h3>Payson Utah</h3>
+                    <p> 13, Fola Falusi Street, Victory Estate, Ilo Ajegunle</p>
+                    <p>+234 908765457</p>
+                    <a href="https://www.churchofjesuschrist.org/temples/details/payson-utah-temple?lang=eng" target="_blank">Details</a>
+                </section>
+
+                <section>
+                    <img src="https://assets.ldscdn.org/c8/b5/c8b5e860a7edbbef90734c83be366e8d359d2c0b/payson_utah_temple.jpg" alt="Payson Utah Temple" />
+                    <h3>Payson Utah</h3>
+                    <p> 13, Fola Falusi Street, Victory Estate, Ilo Ajegunle</p>
+                    <p>+234 908765457</p>
+                    <a href="https://www.churchofjesuschrist.org/temples/details/payson-utah-temple?lang=eng" target="_blank">Details</a>
+                </section>
+
+                <section>
+                    <img src="https://assets.ldscdn.org/c8/b5/c8b5e860a7edbbef90734c83be366e8d359d2c0b/payson_utah_temple.jpg" alt="Payson Utah Temple" />
+                    <h3>Payson Utah</h3>
+                    <p> 13, Fola Falusi Street, Victory Estate, Ilo Ajegunle</p>
+                    <p>+234 908765457</p>
+                    <a href="https://www.churchofjesuschrist.org/temples/details/payson-utah-temple?lang=eng" target="_blank">Details</a>
+                </section>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="">
+            <h3>Timbuktu Chamber of Commerce</h3>
+            <p>13, Idejo Street, Victoria Island</p>
+            <p>info@timbuktu.com</p>
+            <p>+234 8134567890</p>
+        </div>
+        <div class="social-icons">
+            <ul>
+                <li><i class="fa-brands fa-youtube"></i></li>
+                <li><i class="fa-brands fa-x-twitter"></i></li>
+                <li><i class="fa-brands fa-linkedin"></i></li>
+            </ul>
+        </div>
+        <div class="">
+            <p>WDD 231 Class Project</p>
+            <p> Akinrolabu Lolade</p>
+            <p> &copy; <span id="currentyear"></span> Timbuktu Chamber of Commerce</p>
+            <p> Last Modification: <span id="lastmodified"></span> </p>
+        </div>
+
+    </footer>
+
 </body>
+
 </html>
