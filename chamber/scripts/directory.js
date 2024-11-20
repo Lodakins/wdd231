@@ -24,7 +24,7 @@ async function loadAllBusiness(){
 
     let businessHtml="";
 
-    const response = await fetch("/chamber/data/members.json");
+    const response = await fetch("../chamber/data/members.json");
 
     const data = await response.json();
     console.log(data.business);

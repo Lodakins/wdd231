@@ -47,6 +47,22 @@
         "websiteUrl":"https://www.coca-cola.com/ng/en",
         "icon":"https://assets.ldscdn.org/c8/b5/c8b5e860a7edbbef90734c83be366e8d359d2c0b/payson_utah_temple.jpg",
         "membershipLevel":"Premium"
+    },
+    {
+        "name":"Nestle Beverages Ltd",
+        "address":"300 Moshood Abiola Way, Ijora, Lagos, Nigeria",
+        "phone":"+234 808761149",
+        "websiteUrl":"https://www.coca-cola.com/ng/en",
+        "icon":"https://assets.ldscdn.org/c8/b5/c8b5e860a7edbbef90734c83be366e8d359d2c0b/payson_utah_temple.jpg",
+        "membershipLevel":"Premium"
+    },
+    {
+        "name":"Indomie Ltd",
+        "address":"300 Abiola Way, Ikeja, Lagos, Nigeria",
+        "phone":"+234 8093414329",
+        "websiteUrl":"https://www.coca-cola.com/ng/en",
+        "icon":"https://assets.ldscdn.org/c8/b5/c8b5e860a7edbbef90734c83be366e8d359d2c0b/payson_utah_temple.jpg",
+        "membershipLevel":"Premium"
     }
 ]
 }
