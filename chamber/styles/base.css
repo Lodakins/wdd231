@@ -84,7 +84,7 @@ footer {
     background: var(--primary-color);
     font-family: var(--paragraph-font);
     color: #fff;
-    padding: 12px;
+    padding: 12px 60px;
     margin-top: 20px;
     justify-content: space-between;
 }
