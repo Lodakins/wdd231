@@ -28,8 +28,8 @@
      <link href="styles/fontawesome/css/solid.min.css" rel="stylesheet" >
      <link rel="stylesheet" href="styles/normalize.css">
      <link rel="stylesheet" href="styles/base.css" >
-     <link rel="stylesheet" href="styles/directory.css" >
-     <script src="scripts/directory.js" defer></script>
+     <link rel="stylesheet" href="styles/join.css" >
+     <script src="scripts/join.js" defer></script>
      <script src="scripts/getdates.js" defer></script>
 
 
@@ -55,7 +55,82 @@
     </header>
 
     <main>
+        <h2> JOIN</h2>
+        <div class="parent-cont">
+            <section>
+                <h2> Membership Application Form</h2>
+                <form method="get" action="thankyou.html">
+                    <div>
+                        <label for="firstName">First Name</label>
+                        <input type="text" id="firstName" name="firstName" title="firstName"  required autocomplete="on"/>
+                    </div>
+                    <div>
+                        <label for="lastName">Last Name</label>
+                        <input type="text" id="lastName" name="lastName"  title="lastName" required autocomplete="on"/>
+                    </div>
+                    <div>
+                        <label for="organizationTitle">Organization Title</label>
+                        <input type="text" id="organizationTitle" name="organizationTitle" title="organizationTitle" autocomplete="organization-title"/>
+                    </div>
+                    <div>
+                        <label for="email"> Email</label>
+                        <input type="email" id="email" name="email" title="email" autocomplete="on" required placeholder="yeye@gmail.com" />
+                    </div>
+                    <div>
+                        <label for="phoneNo"> Phone Number</label>
+                        <input type="tel" id="phoneNo" name="phoneNo" title="phoneNo" required autocomplete="on" />
+                    </div>
+                    <div>
+                        <label for="organizationName"> Business / Organization Name</label>
+                        <input type="tex" name="organizationName" title="organizationName" name="organizationName" required autocomplete="organization" />
+                    </div>
+                    <div>
+                        <label for="membership">  Membership Level</label>
+                        <select  id="membership" required>
+                            <option value="NP Membership">NP Membership</option>
+                            <option value="Bronze Membership">Bronze Membership</option>
+                            <option value="Silver Membership">Silver Membership</option>
+                            <option value="Gold Membership">Gold Membership</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="description">Description</label>
+                        <textarea id="description" name="description" title="description"></textarea>
+                    </div>
+                    <div>
+                        <input type="hidden" id="timestamp" name="timestamp" value="" />
+                    </div>
+                    <button type="submit">Register</button>
+                </form>
+            </section>
+    
+            <section>
+                <h2>Membership Levels</h2>
+                <div class="level-card-cont">
+                    <div class="level-card">
+                        <h3>NP Membership</h3>
+                        <button data-attr="npDialog">Learn More</button>
+                    </div>
 
+                    <div class="level-card">
+                        <h3>Bronze Membership</h3>
+                        <button data-attr="bronzeDialog">Learn More</button>
+                    </div>
+
+                    <div class="level-card">
+                        <h3>Silver Membership</h3>
+                        <button data-attr="silverDialog">Learn More</button>
+                    </div>
+
+                    <div class="level-card">
+                        <h3>Gold Membership</h3>
+                        <button data-attr="goldDialog">Learn More</button>
+                    </div>
+                </div>
+               
+            </section>
+        </div>
+        
     </main>
 
     <footer>
@@ -80,6 +155,22 @@
         </div>
         
     </footer>
+ 
     
+    <dialog id="npDialog">
+          <p>NP membership level is the basic subscription</p>
+      </dialog>
+
+      <dialog id="bronzeDialog">
+        <p>Bronze Membership level is the L1 subscription</p>
+      </dialog>
+
+      <dialog id="silverDialog">
+        <p>Silver Membership level is the L2 subscription</p>
+      </dialog>
+
+      <dialog id="goldDialog">
+        <p>Gold Membership level is the L3 subscription</p>
+      </dialog>
 </body>
 </html>
