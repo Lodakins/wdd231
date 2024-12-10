@@ -17,10 +17,10 @@ toggleBtn.addEventListener("click", e => {
     // menu.style.display = "none";
     menu.classList.remove("open");
     e.target.classList.remove("open");
-    iconimg.src = "/chamber/images/hamburger.svg";
+    iconimg.src = "/wdd231/chamber/images/hamburger.svg";
   } else {
     // menu.style.display = "flex";
-    iconimg.src = "/chamber/images/cancel.svg";
+    iconimg.src = "/wdd231/chamber/images/cancel.svg";
     e.target.classList.add("open");
     menu.classList.add("open");
   }
