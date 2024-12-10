@@ -2,7 +2,9 @@ main h2{
     color: #fff;
     font-size: 35px;
     padding: 20px;
+    padding-left: 60px;
     background-color: var(--primary-color);
+    font-family: var(--primary-font);
 }
 .parent-cont{
     display: grid;
@@ -77,8 +79,113 @@ button:hover{
     
 }
 
+/*************************************
+        DISCOVER PAGE
+***************************************/
+.discover-container{
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    padding: 20px 60px;
+    overflow: hidden;
+}
+
+.sidebar-card{
+    display: flex;
+    flex-flow: row nowrap;
+    background-color: #52596b;
+    color: #fff;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+.sidebar-card img{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: 1px solid var(--primary-color);
+}
+.sidebar-card .body {
+    margin-left: 9px;
+}
+.sidebar-card body p:first-child{
+    font-size: 19px;
+}
+.content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+.content .image{
+    width: 100%;
+    height: 350px;
+    object-fit: contain;
+    margin-bottom: 50px;
+    
+}
+
+
+
+.content .image figure,.content .image img{
+    width: 100%;
+    height: 100%;
+    margin-bottom: 0px;
+    object-fit: contain;
+    transition: all 1s ease-in-out;
+}
+.content .image figure:hover { 
+    box-shadow: -8px 4px 125px -18px rgba(0,0,0,0.41);
+    -webkit-box-shadow: -8px 4px 125px -18px rgba(0,0,0,0.41);
+    -moz-box-shadow: -8px 4px 125px -18px rgba(0,0,0,0.41);
+    transform: scale(1.05) translate(-1px,-3px);
+-webkit-transform: scale(1.05) translate(-1px,-3px);
+-moz-transform: scale(1.05) translate(-1px,-3px);
+cursor: grab;
+}
+.content .image figure figcaption{
+    background-color: var(--primary-color);
+    color: #fff;
+    font-size: 19px;
+    padding: 12px;
+}
+.content .image img{
+    object-fit: cover;
+}
+.sidebar-message #message{
+    color: var(--primary-color);
+    font-size: 19px;
+}
+.sidebar-message{
+    padding: 20px;
+    font-weight: 600;
+    font-size: 20px;
+    box-shadow: 0px 1px 40px -19px rgba(0,0,0,0.75);
+-webkit-box-shadow: 0px 1px 40px -19px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 1px 40px -19px rgba(0,0,0,0.75);
+}
+
+
 @media only screen and (max-width: 911.98px) {
+    main h2{
+        padding-left: 10px;
+    }
+    figure{
+        margin: 2px;
+    }
     .parent-cont{
         grid-template-columns: 1fr;
+    }
+    .discover-container{
+        grid-template-columns: 1fr;
+    }
+    .content{
+        grid-template-columns: 1fr;
+    }
+    .content .image figure:hover { 
+        box-shadow: none;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        transform: none;
+        -webkit-transform:none;
+        -moz-transform:none;
+        cursor: pointer;
     }
 }
