@@ -66,7 +66,7 @@ button:hover{
     color: #fff;
     border-radius: 20px;
 }
-:modal {
+::backdrop,::-ms-backdrop {
     background-color: beige;
     border: 2px solid burlywood;
     border-radius: 5px;
