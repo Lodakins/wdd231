@@ -1,6 +1,6 @@
 :root {
     /* change the values below to your colors from your palette */
-    --primary-color: #0a0c19   ;
+    --primary-color: rgb(23 29 47)   ;
     --secondary-color: #182948 ;
     --accent1-color: #0f1117;
     --accent2-color: white;
