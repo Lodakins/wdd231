@@ -1,9 +1,9 @@
 :root {
     /* change the values below to your colors from your palette */
     --primary-color: rgb(23 29 47)   ;
-    --secondary-color: #182948 ;
-    --accent1-color: #0f1117;
-    --accent2-color: white;
+    --secondary-color: #bb999c ;
+    --accent1-color: #c0e6de;
+    --accent2-color: #7b8cde;
   
     /* change the values below to your chosen font(s) */
     --heading-font: "IM Fell French Canon SC";
@@ -82,15 +82,15 @@
   }
   .secondary {
     background-color: var(--secondary-color);
-    color: #fff;
+    color: #000;
   }
   .accent1 {
     background-color: var(--accent1-color);
-    color: #fff;
+    color: #000;
   }
   .accent2{
     background-color: var(--accent2-color);
-    color: var(--primary-color);
+    color: #000;;
   }
   
   p.colored {
