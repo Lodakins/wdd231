@@ -10,15 +10,15 @@
     --paragraph-font: Lato, Helvetica, sans-serif;
   
     /* these colors below should be chosen from among your palette colors above */
-    --headline-color-on-white: #182948;  /* headlines on a white background */ 
+    --headline-color-on-white: rgb(23 29 47);  /* headlines on a white background */ 
     --headline-color-on-color: white; /* headlines on a colored background */ 
-    --paragraph-color-on-white: #182948; /* paragraph text on a white background */ 
+    --paragraph-color-on-white: rgb(23 29 47); /* paragraph text on a white background */ 
     --paragraph-color-on-color: white; /* paragraph text on a colored background */ 
-    --paragraph-background-color: #182948  ;
+    --paragraph-background-color: rgb(23 29 47)  ;
     --nav-link-color: #000000;
-    --nav-background-color: #E78200;
+    --nav-background-color: #bb999c;
     --nav-hover-link-color: white;
-    --nav-hover-background-color: #182948;
+    --nav-hover-background-color: #bb999c;
   }
   
   
@@ -171,4 +171,8 @@
     grid-area: right;
     border-top: 1px solid;
     border-right: 1px solid;
+  }
+  .web-wireframe{
+    width: 900px;
+    height: 500px;
   }
