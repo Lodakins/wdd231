@@ -1,6 +1,7 @@
 :root {
     /* change the values below to your colors from your palette */
     --primary-color: #003049   ;
+    --primary-background-color:rgb(15 20 30);
     --secondary-color: #D62828 ;
     --accent1-color: #0f1117;
     --accent2-color: white;
@@ -18,64 +19,117 @@
     --nav-link-color: #000000;
     --nav-background-color: #D62828;
     --nav-hover-link-color: white;
+    --color-on-primary-background: rgb(255,255,255);
     --nav-hover-background-color: #003049;
+}
+body{
+    overflow-x: hidden;
 }
 h1,h2,h3,h4,h5,h6{
     font-family: var(--heading-font);
+    color: #fff;
 }
 p{
     font-family: var(--paragraph-font);
 }
-header {
-    display: grid;
-    grid-template-columns: 250px 1fr;
-    align-items: center;
-    padding: 5px 0px 0px 0px;
-}
 
-header .logo-cont {
-    text-align: center;
-    font-family: var(--heading-font);
-    
+.dashboard{
+  display: grid;
+  grid-template-columns: minmax(100px,150px) 2fr;
+  background: var(--primary-background-color);
+  color: var(--color-on-primary-background);
+  min-height:  100vh;
+  padding: 20px;
 }
-.chamber_logo{
-  width: 120px;
-  height: 120px;
+.sidebar{
+ background-color: #003049;
 }
-
-.navigation{
-    display: grid;
-    justify-content: flex-end;
+.logo-cont{
+    text-align:left;
+    padding: 15px;
 }
-
+.logo{
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+}
 nav ul {
     display: flex;
-    justify-content: flex-end;
-    padding: 35px;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    padding: 15px;
+    min-height: 50vh;
+    text-align: left;
+    background-color: #003049;
 }
-
+ul li i{
+    color: rgba(255, 255, 255, .6);
+}
 ul li {
     list-style: none;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    margin-bottom: 15px;
 }
+
 ul li:hover{
   cursor: pointer;
 }
 nav ul li a {
-    padding: 20px;
+    padding: 8px;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 16px;
     font-family: var(--heading-font);
-    color: var(--primary-color);
-    margin: 0px 30px;
+    color: rgba(255, 255, 255, .6);
 }
-nav ul li a.active{
+nav ul li.active a, nav ul li.active i{
     background-color: var(--primary-color);
     color: rgba(255, 255, 255, .9);
 }
 nav ul li a:hover{
   background-color: var(--primary-color);
   color: rgba(255, 255, 255, .9);
+}
+.main-container{
+    min-height: 100vh;
+    position:relative;
+    padding: 5px 20px;
+}
+/* .search{
+    border: 1px solid var(--primary-color);
+    padding: 20px;
+    border-radius: 50px;
+    background: transparent;
+} */
+::placeholder{
+    color: rgba(255, 255, 255, .7)
+}
+#search-wrapper{
+    display: flex;
+    border: 1px solid #003049;
+    align-items: stretch;
+    border-radius: 50px;
+    background-color: transparent;
+    overflow: hidden;
+    max-width: 400px;
+    box-shadow: 2px 1px 5px 1px#003049;
+   
+}
+#search{
+    border:none;
+    width:300px;
+    font-size: 15px;
+    background: transparent;
+    color: #fff;
+}
+#search:focus{
+    outline: none;
+}
+.search-icon{
+    margin: 10px;
+    color:gba(255, 255, 255, .7);
 }
 #toggle-btn{
   display: none;
@@ -92,23 +146,16 @@ footer {
     color: #fff;
     padding: 12px 60px;
     margin-top: 20px;
-    justify-content: space-between;
+    justify-content: center;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
 }
 
-footer p, footer h3 {
-    text-align: left;
-    margin: 10px;
+footer p{
+    text-align: center;
 }
 
-footer .social-icons ul li{
-    display: inline-flex;
-    margin: 15px 10px;
-    justify-items: center;
-    align-items: center;
-}
-footer .social-icons ul li i{
-    font-size: 35px;
-}
 
 
 

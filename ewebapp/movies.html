@@ -35,6 +35,38 @@
     <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
-    
+    <div class="dashboard">
+        <nav class="sidebar">
+            <div class="logo-cont">
+                <img src="images/ebweblogo.png" class="logo" alt="ewebapp_logo" />
+            </div>
+            <ul>
+                <li ><i class="fa-solid fa-house"></i><a href="index.html">Home</a></li>
+                <li class="active"> <i class="fa-solid fa-film"></i><a href="movies.html">Movies</a></li>
+                <li><i class="fa-solid fa-clapperboard"></i><a href="series.html">Series</a></li>
+                <li><i class="fa-solid fa-bookmark"></i><a href="bookmark.html">Bookmarks</a></li>
+            </ul>
+        </nav>
+        <div class="main-container">
+            <div class="sub-header">
+                <div id="search-wrapper">
+                  <i class="search-icon fas fa-search"></i>
+                  <input type="text" id="search" placeholder="Search for movies or TV series">
+                </div>
+            </div>
+            <div class="content">
+                <div class="trending-cont">
+                    
+                </div>
+                <div class="recommend-cont">
+
+                </div>
+            </div>
+            <footer>
+                <p> Akinrolabu Lolade |  &copy; <span id="currentyear"></span> |  Last Modification: <span id="lastmodified"></span></p>
+            </footer>
+        </div>
+    </div>
+ 
 </body>
 </html>
