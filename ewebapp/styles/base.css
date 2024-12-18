@@ -24,6 +24,7 @@
 }
 body{
     overflow-x: hidden;
+    box-sizing: border-box;
 }
 h1,h2,h3,h4,h5,h6{
     font-family: var(--heading-font);
@@ -155,8 +156,92 @@ footer {
 footer p{
     text-align: center;
 }
+.trending-card-cont, .recommend-card-cont{
+    display: flex;
+    flex-flow: row wrap;
+}
+.trending-card{
+    width: 300px;
+    height: 150px;
+    background: rgba(0, 0, 0, .5);
+    border-radius: 10px;
+    background-image: url('../images/ebweblogo.png');
+    background-position:center;
+    background-blend-mode: overlay;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 15px;
+}
+.trending-header{
+    text-align: right;
+}
+.trending-header .trending-icon{
+    margin-right: 10px;
+    border-color: #fff;
+}
+.trending-body{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-items: flex-end;
+}
+.trending-body .details{
+    display: flex;
+    flex-flow: row nowrap;
+    color: #fff;
+}
+.trending-body .details p{
+    margin-right: 5px;
+}
+.trending-body h3{
+    margin: 0px;
+}
+.recommend-card{
+    box-sizing: border-box;
+    width: 300px;
+    height: 220px;
+    background: rgba(0, 0, 0, .5);
+    box-shadow: 3px 2px 33px -6px #003049;
+-webkit-box-shadow: 3px 2px 33px -6px #003049;
+-moz-box-shadow: 3px 2px 33px -6px #003049;
+margin: 15px;
+}
+/*
 
-
+*/
+.recommend-header{
+    text-align: right;
+    padding: 10px;
+}
+.recommend-body{
+    height: 130px;
+    background: rgba(0, 0, 0, .5);
+    background-image: url('../images/ebweblogo.png');
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    background-position:center;
+    background-blend-mode: overlay;
+}
+.recommend-details{
+    box-sizing: border-box;
+    height: 40px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, .4);
+}
+.recommend-details .details{
+    display: flex;
+    flex-flow: row nowrap;
+    color: #fff;
+    align-content: flex-end;
+}
+.recommend-details .details p{
+    margin-right: 5px;
+}
+.recommend-details .title{
+    font-size: 12px;
+    margin: 0px;
+}
 
 
 @media only screen and (max-width: 911.98px) {
