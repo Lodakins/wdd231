@@ -94,16 +94,7 @@ nav ul li a:hover{
   color: rgba(255, 255, 255, .9);
 }
 
-/* .sub-menu ul li a {
-    padding: 8px;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 16px;
-    font-family: var(--heading-font);
-    color: rgba(255, 255, 255, .6);
-} */
 .sub-menu ul li.active a, .sub-menu ul li.active i{
-    /* background-color: var(--primary-color); */
     color: rgba(255, 255, 255, .9);
 }
 .main-container{
@@ -114,12 +105,7 @@ nav ul li a:hover{
 .main-container .sub-menu{
     display: none;
 }
-/* .search{
-    border: 1px solid var(--primary-color);
-    padding: 20px;
-    border-radius: 50px;
-    background: transparent;
-} */
+
 ::placeholder{
     color: rgba(255, 255, 255, .7)
 }
