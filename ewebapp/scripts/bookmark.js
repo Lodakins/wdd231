@@ -1,30 +1,27 @@
 let trendingCont = document.querySelector('.trending-card-cont');
 
 async function getAllMovies(params) {
-    const url = 'https://moviesdatabase.p.rapidapi.com/titles?startYear=2020&limit=30';
-const options = {
-	method: 'GET',
-	headers: {
-		'x-rapidapi-key': '4140faa556msh86a17e459830975p1b8b8djsn02f5450116c2',
-		'x-rapidapi-host': 'moviesdatabase.p.rapidapi.com'
-	}
-};
-
+   
 try {
-	const response = await fetch(url, options);
-	const resp = await response.json();
 
     let trending="";
+    let bookmarkStorage = localStorage.getItem('bookmark');
+    let bookmarkStg= bookmarkStorage? Array.from(JSON.parse(bookmarkStorage)):[] ;
 
-    resp.results.forEach((el)=>{
+    if(bookmarkStg.length <=0){
+        trendingCont.innerHTML="<p class='warning'> No bookmark yet</p>";
+        return;
+    }
+
+    bookmarkStg.forEach((el)=>{
         trending+=`<div class="trending-card" style="background-image:url(${el.primaryImage ? el?.primaryImage.url: "images/ebweblogo.png"})">
                         <div class="trending-header">
-                            <i class="fa-solid fa-bookmark trending-icon"></i>
+                            <i class="fa-solid fa-bookmark trending-icon bookmark-icon bookmarked" data-attr='${JSON.stringify(el)}'></i>
                         </div>
                         <div class="trending-body" >
                             <div class="details">
                                 <p>${el?.releaseYear?.year}</p>
-                                <p>${el.titleType.series ? "Series" : "Movies"}</p>
+                                <p>${el?.titleType?.isSeries ? "Series" : "Movies"}</p>
                                 <p>PG</p>
                             </div>
                             <h3 class="title">${el.titleText.text}</h3>
@@ -38,5 +35,34 @@ try {
 	console.error(error);
 }
 }
+
+
+document.addEventListener('click', function (e) {
+
+    if (e.target.classList.contains('bookmark-icon')) {
+        let data = JSON.parse(e.target.getAttribute('data-attr'));
+        let bookmarkStorage = localStorage.getItem('bookmark');
+
+        if (e.target.classList.contains('bookmarked')) {
+            e.target.classList.remove('bookmarked');
+            let bookmarkStg = Array.from(JSON.parse(bookmarkStorage));
+            bookmarkStg = bookmarkStg.filter((el) => el.id != data.id);
+            localStorage.clear();
+            localStorage.setItem('bookmark', JSON.stringify(bookmarkStg));
+            getAllMovies();
+        } else {
+            e.target.classList.add('bookmarked');
+            if (!bookmarkStorage) {
+                bookmarks.push(data);
+            } else {
+                let bookmarkStg = Array.from(JSON.parse(bookmarkStorage));
+                bookmarks = [data, ...bookmarkStg];
+            }
+            localStorage.clear();
+            localStorage.setItem('bookmark', JSON.stringify(bookmarks));
+            bookmarks = [];
+        }
+    }
+})
 
 getAllMovies();

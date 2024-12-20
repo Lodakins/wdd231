@@ -93,10 +93,26 @@ nav ul li a:hover{
   background-color: var(--primary-color);
   color: rgba(255, 255, 255, .9);
 }
+
+/* .sub-menu ul li a {
+    padding: 8px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-family: var(--heading-font);
+    color: rgba(255, 255, 255, .6);
+} */
+.sub-menu ul li.active a, .sub-menu ul li.active i{
+    /* background-color: var(--primary-color); */
+    color: rgba(255, 255, 255, .9);
+}
 .main-container{
     min-height: 100vh;
     position:relative;
     padding: 5px 20px;
+}
+.main-container .sub-menu{
+    display: none;
 }
 /* .search{
     border: 1px solid var(--primary-color);
@@ -132,6 +148,14 @@ nav ul li a:hover{
     margin: 10px;
     color:gba(255, 255, 255, .7);
 }
+.searchBtn{
+    font-size: 12px;
+    font-family: var(--paragraph-font);
+    background: #fff !important;
+    color: var(--primary-color) !important;
+    border: none;
+    border-radius: 20px;
+}
 #toggle-btn{
   display: none;
 }
@@ -148,8 +172,8 @@ footer {
     padding: 12px 60px;
     margin-top: 20px;
     justify-content: center;
-    position: absolute;
-    bottom: 0px;
+    /* position: absolute;
+    bottom: 0px; */
     width: 100%;
 }
 
@@ -168,6 +192,8 @@ footer p{
     background-image: url('../images/ebweblogo.png');
     background-position:center;
     background-blend-mode: overlay;
+    background-origin: border-box;
+    background-size: cover;
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
@@ -199,13 +225,24 @@ footer p{
 }
 .recommend-card{
     box-sizing: border-box;
-    width: 300px;
+    width: 320px;
     height: 220px;
     background: rgba(0, 0, 0, .5);
     box-shadow: 3px 2px 33px -6px #003049;
 -webkit-box-shadow: 3px 2px 33px -6px #003049;
 -moz-box-shadow: 3px 2px 33px -6px #003049;
 margin: 15px;
+}
+i:hover{
+    cursor: pointer;
+}
+.bookmarked{
+     color: #D62828;;
+}
+.warning{
+    font-size: 36px;
+    text-align: center;
+    margin: 0 auto;
 }
 /*
 
@@ -222,6 +259,9 @@ margin: 15px;
     border-top-left-radius: 10px;
     background-position:center;
     background-blend-mode: overlay;
+    background-blend-mode: overlay;
+    background-origin: border-box;
+    background-size: cover;
 }
 .recommend-details{
     box-sizing: border-box;
@@ -245,50 +285,40 @@ margin: 15px;
 
 
 @media only screen and (max-width: 911.98px) {
-    header {
-        grid-template-columns: 1fr;
-    }
-
-  header div {
-        grid-row: 1/2;
+    .main-container{
+        padding: 0px;
+        position: inherit;
         display: flex;
-        justify-content: space-between;
-        padding: 15px;
-    }
-    .navigation{
-        grid-template-columns: 0fr;
-        grid-template-rows: 0fr;
-        transition:  grid-template-rows 0.5s ease-out;
-    }
-    .navigation.open{
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-    }
-    nav ul {
-        flex-flow: column;
+        flex-flow: column nowrap;
         overflow: hidden;
+    }
+    .dashboard{
+        grid-template-columns: 1fr;
+    }
+    footer{
+        width: auto;
+    }
+    .sidebar{
+        display: none;
+    }
+    .main-container .sub-menu{
+        display: flex;
+        margin-bottom: 20px;
+        
+    }
+    .main-container .sub-menu ul{
         width: 100%;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
         padding: 0px;
     }
-
-    nav ul li {
-        margin: 12px 0px;
-        padding: 10px;
+    .main-container .sub-menu ul li{
+        display: inline-block;
+        margin: 0px 10px;
     }
-
-    nav ul li a {
-        font-size: 20px;
-    }
-    #toggle-btn{
-        display: block;
-    }
-
-    footer{
-        flex-flow: column nowrap;
-    }
-
-    .social-icons ul{
-        padding-left: 2px;
+    .main-container .sub-menu ul li i{
+        font-size: 30px;
     }
 
 }
