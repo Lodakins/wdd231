@@ -5,18 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Akinrolabu Lolade">
     <meta name="keywords" content="movie series action adventure bookmark">
-    <meta name="description" content="bookmark page for entertainment web app">
-    <title> Entertainment Web App  - Bookmark</title>
+    <meta name="description" content="contact page for entertainment web app">
+    <title> Entertainment Web App  - Contact</title>
     <!--  Essential META Tags -->
-    <meta property="og:title" content="Entertainment Web App  - Bookmark">
+    <meta property="og:title" content="Entertainment Web App  - contact">
     <meta property="og:type" content="website" >
     <meta property="og:image" content="https://lodakins.github.io/wdd231/ewebapp/images/logo.jpg">
     <meta property="og:url" content="https://lodakins.github.io/wdd231/ewebapp/index.html">
     <meta name="twitter:card" content="Entertainment Web App">
 
     <!--  Non-Essential, But Recommended -->
-    <meta property="og:description" content="bookmark page for entertainment web app">
-    <meta property="og:site_name" content="Entertainment Web App  - Bookmark">
+    <meta property="og:description" content="contact page for entertainment web app">
+    <meta property="og:site_name" content="Entertainment Web App  - contact">
     <meta name="twitter:image:alt" content="entertainment web app">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -29,7 +29,7 @@
     <link href="styles/fontawesome/css/solid.min.css" rel="stylesheet" >
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css" >
-    <script src="scripts/bookmark.js" defer></script>
+    <!-- <script src="scripts/bookmark.js" defer></script> -->
     <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
@@ -42,8 +42,8 @@
                 <li ><i class="fa-solid fa-house"></i><a href="index.html">Home</a></li>
                 <li > <i class="fa-solid fa-film"></i><a href="movies.html">Movies</a></li>
                 <li><i class="fa-solid fa-clapperboard"></i><a href="series.html">Series</a></li>
-                <li class="active"><i class="fa-solid fa-bookmark"></i><a href="bookmark.html">Bookmarks</a></li>
-                <li ><i class="fa-solid fa-address-book"></i><a href="contact.html">Contact</a></li>
+                <li ><i class="fa-solid fa-bookmark"></i><a href="bookmark.html">Bookmarks</a></li>
+                <li class="active"><i class="fa-solid fa-address-book"></i><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
         <div class="main-container">
@@ -52,8 +52,9 @@
                     <li><a href="index.html"><i class="fa-solid fa-house"></i></a></li>
                     <li><a href="movies.html"><i class="fa-solid fa-film"></i></a></li>
                     <li><a href="series.html"><i class="fa-solid fa-clapperboard"></i></a></li>
-                    <li class="active"><a href="bookmark.html"><i class="fa-solid fa-bookmark"></i></a></li>
-                    <li><a href="contact.html"><i class="fa-solid fa-address-book"></i></a></li>
+                    <li ><a href="bookmark.html"><i class="fa-solid fa-bookmark"></i></a></li>
+                    <li class="active"><a href="contact.html"><i class="fa-solid fa-address-book"></i></a></li>
+                    
                 </ul>
             </div>
             <div class="sub-header">
@@ -64,21 +65,39 @@
             </div>
             <div class="content">
                 <div class="trending-cont">
-                    <h1> Bookmarks</h1>
+                    <h1> Contact Us</h1>
                     <div class="trending-card-cont">
-                        <!-- <div class="trending-card">
-                            <div class="trending-header">
-                                <i class="fa-solid fa-bookmark trending-icon"></i>
-                            </div>
-                            <div class="trending-body">
-                                <div class="details">
-                                    <p>2020</p>
-                                    <p>Movies</p>
-                                    <p>PG</p>
+                        <section>
+                            <!-- <h2> Membership Application Form</h2> -->
+                            <form method="get" action="thankyou.html">
+                                <div>
+                                    <label for="firstName">First Name</label>
+                                    <input type="text" id="firstName" name="firstName" title="firstName"  required autocomplete="on">
                                 </div>
-                                <h3 class="title">Beyond Earth</h3>
-                            </div>
-                        </div> -->
+                                <div>
+                                    <label for="lastName">Last Name</label>
+                                    <input type="text" id="lastName" name="lastName"  title="lastName" required autocomplete="on">
+                                </div>
+                                
+                                <div>
+                                    <label for="email"> Email</label>
+                                    <input type="email" id="email" name="email" title="email" autocomplete="on" required placeholder="yeye@gmail.com" >
+                                </div>
+                                <div>
+                                    <label for="phoneNo"> Phone Number</label>
+                                    <input type="tel" id="phoneNo" name="phoneNo" title="phoneNo" required autocomplete="on" >
+                                </div>
+                               
+                                <div>
+                                    <label for="description">Message</label>
+                                    <textarea id="description" name="description" title="description" rows="4"></textarea>
+                                </div>
+                                <div>
+                                    <input type="hidden" id="timestamp" name="timestamp" value="" >
+                                </div>
+                                <button type="submit">Register</button>
+                            </form>
+                        </section>
                     </div>
                 </div>
             </div>
@@ -89,3 +108,6 @@
     </div>
 </body>
 </html>
+
+
+

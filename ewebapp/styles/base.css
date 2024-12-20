@@ -268,6 +268,35 @@ i:hover{
     font-size: 12px;
     margin: 0px;
 }
+form{
+    display: flex;
+    flex-flow: column nowrap;
+    color: #fff;
+    background-color: #fff;
+    padding: 30px;
+    margin: 0 auto;
+}
+form div{
+    display: flex;
+    flex-flow: column nowrap;
+    margin-bottom: 20px;
+}
+form label{
+    color: var(--primary-color);
+    margin-bottom: 5px;
+}
+input,select{
+    padding: 9px;
+}
+button{
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 12px;
+}
+button:hover{
+    cursor: pointer;
+}
+
 
 
 @media only screen and (max-width: 911.98px) {
